@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap');
+
+* {
+margin:0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    color: #c1995b;
+    
+}
+
+body {
+background-color: white;
+}
+
+body, input, label {
+font-size: 16px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mainContainer {
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 900px;
+}
+
+#template {
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+}
+
+.horizontal-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;   
+    width: 100%;
+}
+
+
+.horizontal-wrapper > * {
+
+}
+
+form {
+margin-top: 20px;
+
+padding: 24px;
+border-radius:16px;
+background-color:white;
+border: 1px solid #eeefff;  
+box-shadow: 0px 3px 16px rgba(0,0,1,0.05);
+text-align: left;
+}
+
+#copy {
+    margin-top: 40px;
+}
+
+input, label {
+width:100%;
+display:block;
+color:#888;
+}
+
+label {
+font-weight: 500;
+padding-bottom: 8px;
+}
+
+input {
+background-color:#eeefff;
+border-radius: 5px;
+border: none; 
+padding: 12px;
+box-sizing: border-box;
+}
+
+hr {
+visibility: hidden;
+margin: 8px;
+}
+
+
+button {
+display: block;
+color: white;
+background-color: #c1995b;
+font-size: 16px;
+padding: 16px 32px;
+margin: 20px auto;
+cursor:pointer;
+border: none;
+width: 100%;
+}
+
+button:hover {
+background-color: #e6b56c
+;
+}
+

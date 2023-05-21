@@ -1,0 +1,348 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Cohen International Advisors: Generador de firmas</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css">
+
+        <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+        <!--SCRIPT-->
+
+        <script>
+
+            //Name
+
+            function addname()
+
+            {
+
+            var name = document.getElementById("name");
+
+            var s = name.value;
+
+            document.getElementById('name1').innerHTML = s;
+
+            }
+
+    
+
+            //Title
+
+            function addjobtitle()
+
+            {
+
+            var jobtitle = document.getElementById("jobtitle");
+
+            var s = jobtitle.value;
+
+            document.getElementById('jobtitle1').innerHTML = s;
+
+            }
+
+    
+
+            //Mobile Phone Number
+
+            function addmobileno()
+
+            {
+
+            var mobileno = document.getElementById("mobileno");
+
+            var s = mobileno.value;
+
+            document.getElementById('mobileno-input').innerHTML = s
+
+            }
+
+    
+
+            //Email Address
+
+            function addemailaddress()
+
+            {
+
+            var email = document.getElementById("email");
+
+            var s = email.value;
+
+            document.getElementById('email-input').innerHTML = s
+
+            document.getElementById('email-input').href= "mailto:"+s;
+
+            }
+
+    
+
+            //Copy
+
+    
+
+            $(function() {
+
+            new Clipboard('#copy-button');
+
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+
+
+        
+
+        <div id="mainContainer">
+
+        
+
+
+
+            <div id="template">
+
+            <h1>Generador de firmas Cohen International Advisors</h1>
+
+            <!--Fill out form - STARTS HERE-->
+
+
+
+                <form>
+
+                    <label>Tu nombre:</label>
+
+                    <input id="name" type="text" name="name" placeholder="Nombre Apellido" onKeyup="addname()" required>
+
+                    <hr>
+
+                    <label>Cargo:</label>
+
+                    <input id="jobtitle" type="text" name="jobtitle" placeholder="Empleado" onKeyup="addjobtitle()" required>
+
+                    <hr>
+
+                    <label>Teléfono:</label>
+
+                    <input id="mobileno" type="text" name="mobileno" placeholder="0 800 122 6824" onKeyup="addmobileno()" required>
+
+                    <hr>
+
+                    <label>Mail:</label>
+
+                    <input id="email" type="email" name="email" placeholder="tumail@cohen.com.ar" onKeyup="addemailaddress()" required>
+
+                </form>
+
+                <!--Fill out form - ENDS HERE-->     
+
+                <!--Signature  Template - STARTS HERE-->
+
+                <div id="copy">
+
+                    <style>
+
+                        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+                    </style>
+
+                    <table>
+
+
+
+                        <tr>
+
+                            <td>
+
+
+
+                            <span style="font-family:'Montserrat',Helvetica,Arial,sans-serif;font-size:14px;font-weight:700;color:#999;" id="name1"></span><br>
+
+                            <span style="font-family:'Montserrat',Helvetica,Arial,sans-serif;font-size:11px;font-weight: regular;color:#999; text-transform: uppercase; margin-top: 2px" id="jobtitle1"></span><br>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td style="padding-top: 4px;">
+
+                                <span style="font-family:'Montserrat',Helvetica,Arial,sans-serif;font-size:11px;color:#999;">
+
+                                    Tel: <span id="mobileno-input"></span>
+
+                                    <br>
+
+                                    <a href="mailto:info@cohen.com.ar" style="color:#c1995b; text-decoration: none" id="email-input"></a>
+
+                                    <br>
+
+                                <a href="https://www.cohenadvisors.com/" style="color:#c1995b;cursor: pointer; text-decoration: none; cursor: pointer" target="_blank">www.cohenadvisors.com</a> | <a href="https://perspectivas.cohen.com.ar/" style="color:#c1995b;cursor: pointer; text-decoration: none; cursor: pointer" target="_blank">perspectivas.cohen.com.ar</a>
+
+                                    <br>
+
+                                    Dr. Luis Bonavita 1294 WTC Free Zone Torre 2 Oficina 537
+
+                                    <br>
+
+                                    Montevideo - Uruguay
+
+                                    <br>
+
+                                    <br>
+
+                                    <br>
+
+                                    <img src="./imagenes/logo-cia.png" width="128" alt="Cohen">
+
+
+
+                                    <br>
+
+                                    <br>
+
+
+
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" style="display:inline;">
+
+                                        <tbody>
+
+                                            <tr>
+
+                                                                    
+
+                                            <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+
+                                                <a style="cursor: pointer" href="https://www.youtube.com/channel/UCsi21Za0L_M8jqGLIs3UVaw" target="_blank"><img src="./imagenes/l1.png
+
+                                                    " alt="YouTube" style="display:block;" height="30" width="30" class=""></a>
+
+                                            </td>	
+
+                                            
+
+                                            <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+
+                                                <a style="cursor: pointer" href="https://twitter.com/cohenargentina" target="_blank"><img src="./imagenes/l3.png" alt="YouTube" style="display:block; margin-right: 5px; margin-left: 5px;" height="30" width="30" class=""></a>
+
+                                            </td>	
+
+                            
+
+                                            <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+
+                                                <a style="cursor: pointer" href="https://www.linkedin.com/company/cohenargentina/?originalSubdomain=ar" target="_blank"><img src="./imagenes/l2.png
+
+                                                    " alt="YouTube" style="display:block;" height="30" width="30" class=""></a>
+
+                                            </td>	
+
+                                                                
+
+                                            </tr>
+
+                                            
+
+                                        </tbody>
+
+
+
+                                        
+
+                                    </table>
+
+ 
+
+                                
+
+                                
+
+                           
+
+
+
+
+
+
+
+                                </span>
+
+                              
+
+                                <br>
+
+                                <br>
+
+                                <br>
+
+                                <div style="width: 100%; height: 1px;  border-bottom: 1px solid rgb(223, 223, 223);"></div>
+
+                                <br>
+
+                                <span style="font-size: 10px; color: #999; font-family: 'Montserrat',Helvetica,Arial,sans-serif">
+
+                                
+
+                                    COHEN S.A. IGJ Nº 179337 es un agente registrado ante CNV bajo las categorías de: <br>
+
+                                    - Agente de Negociación, Liquidación y Compensación Integral Nº 21<br>
+
+                                    - Fiduciario Financiero Nº 43<br>
+
+                                    - Agente de Administración de Productos de Inversión Colectiva Nº 47<br>
+
+                                    - Agente de Colocación y Distribución Integral de Fondos Comunes de Inversión N° 112.<br>
+
+                                    Para mayor información sobre nuestros servicios por favor visite nuestra página web: <a style="color: #c1995b; cursor: pointer; text-decoration: none;" href="https://www.cohen.com.ar/">www.cohen.com.ar</a>.<br>
+
+                                    Este mensaje es de carácter confidencial y puede contener información alcanzada por el artículo 53 de la ley 26.831 y/o información privilegiada. Si Ud. recibió este mensaje por error, por favor infórmelo por este mismo medio y elimínelo. No divulgue su contenido. Muchas gracias.<br>
+
+                                    Este informe fue preparado por Cohen valiéndose de información que considera confiable y segura. Este informe no constituye una oferta ni una recomendación de compraventa y no garantiza resultado de ningún tipo. Este informe no suple el análisis propio que cada inversor debe realizar considerando sus personales circunstancias y de ninguna manera supone una recomendación financiera o legal.</span>
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                    
+
+                </div>
+
+                <button type="button" id="copy-button" data-clipboard-target="#copy">
+
+                    Copiá la firma
+
+                </button>
+
+        
+
+            </div>
+
+            <!--Signature  Template - ENDS HERE-->
+
+        </div>
+
+    </body>
+
+</html>
+
